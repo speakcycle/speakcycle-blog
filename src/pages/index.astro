@@ -1,0 +1,124 @@
+---
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('blog')).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+
+const canonicalURL = 'https://www.speakcycle.com/blog';
+
+const listingSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Blog',
+  '@id': `${canonicalURL}#blog`,
+  name: 'SpeakCycle Blog',
+  description: 'Dicas, guias e estratégias para aprender inglês americano como os brasileiros precisam.',
+  url: canonicalURL,
+  publisher: {
+    '@type': 'Organization',
+    name: 'SpeakCycle',
+    url: 'https://www.speakcycle.com',
+  },
+  blogPost: posts.map(p => ({
+    '@type': 'BlogPosting',
+    headline: p.data.title,
+    url: `https://www.speakcycle.com/blog/${p.slug}`,
+    datePublished: p.data.pubDate.toISOString(),
+  })),
+};
+---
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog — Aprenda Inglês Americano | SpeakCycle</title>
+  <meta name="description" content="Dicas, guias e estratégias para brasileiros aprenderem inglês americano de verdade. Do Professor Jordan, nativo dos EUA." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href={canonicalURL} />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Blog SpeakCycle — Aprenda Inglês Americano" />
+  <meta property="og:description" content="Dicas e guias para brasileiros aprenderem inglês americano de verdade." />
+  <meta property="og:url" content={canonicalURL} />
+  <meta property="og:image" content="https://www.speakcycle.com/speakcycle-logo.png" />
+  <meta property="og:site_name" content="SpeakCycle" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Blog SpeakCycle — Aprenda Inglês Americano" />
+  <meta name="twitter:description" content="Dicas e guias para brasileiros aprenderem inglês americano de verdade." />
+  <meta name="twitter:image" content="https://www.speakcycle.com/speakcycle-logo.png" />
+  <script type="application/ld+json" set:html={JSON.stringify(listingSchema)} />
+  <link rel="alternate" type="application/rss+xml" title="SpeakCycle Blog" href="/blog/rss.xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3J02L2DDVP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-3J02L2DDVP');
+  </script>
+</head>
+<body class="bg-cream text-charcoal font-sans antialiased">
+
+  <!-- Nav -->
+  <nav class="border-b border-purple-100 bg-white/80 backdrop-blur-sm sticky top-0 z-10">
+    <div class="max-w-3xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="https://www.speakcycle.com/start" class="font-black text-grape text-lg tracking-tight">SpeakCycle</a>
+      <a href="https://www.speakcycle.com/start" class="text-sm bg-clay text-white font-bold px-4 py-2 rounded-full hover:bg-purple-400 transition-colors">
+        Aula grátis
+      </a>
+    </div>
+  </nav>
+
+  <main class="max-w-3xl mx-auto px-6 py-16">
+    <header class="mb-12">
+      <p class="text-xs font-bold uppercase tracking-widest text-clay mb-3">SpeakCycle Blog</p>
+      <h1 class="text-5xl font-black text-grape leading-tight mb-4">Aprenda inglês americano de verdade</h1>
+      <p class="text-lg text-gray-500 leading-relaxed">Dicas, guias e estratégias do Professor Jordan — nativo dos EUA, certificado TEFL nível 5.</p>
+    </header>
+
+    <div class="space-y-6">
+      {posts.map(post => (
+        <article class="group border border-purple-100 bg-white rounded-2xl p-6 hover:shadow-md transition-shadow">
+          <a href={`/blog/${post.slug}`} class="block">
+            {post.data.tags.length > 0 && (
+              <div class="flex gap-2 mb-3">
+                {post.data.tags.slice(0, 2).map(tag => (
+                  <span class="text-xs font-bold uppercase tracking-widest text-clay">{tag}</span>
+                ))}
+              </div>
+            )}
+            <h2 class="text-xl font-black text-grape mb-2 group-hover:text-cello transition-colors leading-snug">
+              {post.data.title}
+            </h2>
+            <p class="text-gray-500 text-sm leading-relaxed mb-4">{post.data.description}</p>
+            <div class="flex items-center justify-between">
+              <time class="text-xs text-gray-400" datetime={post.data.pubDate.toISOString()}>
+                {post.data.pubDate.toLocaleDateString('pt-BR', { year: 'numeric', month: 'long', day: 'numeric' })}
+              </time>
+              <span class="text-cello text-sm font-semibold group-hover:underline">Ler artigo →</span>
+            </div>
+          </a>
+        </article>
+      ))}
+    </div>
+
+    <!-- CTA -->
+    <div class="mt-16 bg-gradient-to-br from-grape to-cello rounded-2xl p-8 text-white text-center">
+      <h2 class="text-2xl font-black mb-3">Pronto para falar inglês americano?</h2>
+      <p class="text-purple-200 mb-6">Primeira aula grátis · 100% em inglês · Sem cartão de crédito</p>
+      <a href="https://www.speakcycle.com/start" class="inline-block bg-clay hover:bg-purple-400 transition-colors text-white font-black px-8 py-4 rounded-full text-base">
+        🎓 Agendar aula grátis
+      </a>
+    </div>
+  </main>
+
+  <footer class="border-t border-purple-100 mt-8 py-8 text-center text-sm text-gray-400">
+    <p>© {new Date().getFullYear()} SpeakCycle · <a href="https://www.speakcycle.com/start" class="text-cello hover:underline">speakcycle.com</a></p>
+  </footer>
+
+</body>
+</html>

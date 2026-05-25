@@ -1,0 +1,175 @@
+---
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  post: CollectionEntry<'blog'>;
+}
+
+const { post } = Astro.props;
+const { title, description, pubDate, updatedDate, lang, tags, heroImage } = post.data;
+const slug = post.slug;
+
+const canonicalURL = `https://www.speakcycle.com/blog/${slug}`;
+const formattedDate = pubDate.toISOString();
+const formattedUpdated = updatedDate?.toISOString() ?? formattedDate;
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Article',
+      '@id': `${canonicalURL}#article`,
+      headline: title,
+      description,
+      datePublished: formattedDate,
+      dateModified: formattedUpdated,
+      inLanguage: lang === 'pt' ? 'pt-BR' : 'en-US',
+      author: {
+        '@type': 'Person',
+        name: 'Professor Jordan',
+        url: 'https://www.speakcycle.com/start',
+        jobTitle: 'TEFL Level 5 Certified English Teacher',
+        nationality: 'US',
+      },
+      publisher: {
+        '@type': 'Organization',
+        name: 'SpeakCycle',
+        url: 'https://www.speakcycle.com',
+        logo: {
+          '@type': 'ImageObject',
+          url: 'https://www.speakcycle.com/speakcycle-logo.png',
+        },
+      },
+      mainEntityOfPage: { '@type': 'WebPage', '@id': canonicalURL },
+      ...(heroImage ? { image: heroImage } : {}),
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'SpeakCycle', item: 'https://www.speakcycle.com/start' },
+        { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.speakcycle.com/blog' },
+        { '@type': 'ListItem', position: 3, name: title, item: canonicalURL },
+      ],
+    },
+  ],
+};
+---
+
+<!DOCTYPE html>
+<html lang={lang === 'pt' ? 'pt-BR' : lang}>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{title} | SpeakCycle Blog</title>
+  <meta name="description" content={description} />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href={canonicalURL} />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:url" content={canonicalURL} />
+  <meta property="og:site_name" content="SpeakCycle" />
+  <meta property="og:locale" content={lang === 'pt' ? 'pt_BR' : 'en_US'} />
+  <meta property="og:image" content={heroImage ?? 'https://www.speakcycle.com/speakcycle-logo.png'} />
+  <meta property="article:published_time" content={formattedDate} />
+  <meta property="article:modified_time" content={formattedUpdated} />
+  {tags.map(tag => <meta property="article:tag" content={tag} />)}
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={title} />
+  <meta name="twitter:description" content={description} />
+  <meta name="twitter:image" content={heroImage ?? 'https://www.speakcycle.com/speakcycle-logo.png'} />
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3J02L2DDVP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-3J02L2DDVP');
+  </script>
+</head>
+<body class="bg-cream text-charcoal font-sans antialiased">
+
+  <!-- Nav -->
+  <nav class="border-b border-purple-100 bg-white/80 backdrop-blur-sm sticky top-0 z-10">
+    <div class="max-w-3xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="https://www.speakcycle.com/start" class="font-black text-grape text-lg tracking-tight">SpeakCycle</a>
+      <a href="/blog" class="text-sm text-cello font-semibold hover:underline">← Blog</a>
+    </div>
+  </nav>
+
+  <!-- Article -->
+  <main class="max-w-3xl mx-auto px-6 py-12">
+    <!-- Breadcrumb -->
+    <nav class="text-sm text-gray-400 mb-8 flex gap-2 flex-wrap">
+      <a href="https://www.speakcycle.com/start" class="hover:text-cello">SpeakCycle</a>
+      <span>/</span>
+      <a href="/blog" class="hover:text-cello">Blog</a>
+      <span>/</span>
+      <span class="text-charcoal">{title}</span>
+    </nav>
+
+    <header class="mb-10">
+      {tags.length > 0 && (
+        <div class="flex gap-2 flex-wrap mb-4">
+          {tags.map(tag => (
+            <span class="text-xs font-bold uppercase tracking-widest text-clay">{tag}</span>
+          ))}
+        </div>
+      )}
+      <h1 class="text-4xl font-black leading-tight text-grape mb-4">{title}</h1>
+      <p class="text-lg text-gray-500 leading-relaxed mb-6">{description}</p>
+      <div class="flex items-center gap-3 text-sm text-gray-400">
+        <span class="font-semibold text-charcoal">Professor Jordan</span>
+        <span>·</span>
+        <time datetime={formattedDate}>
+          {pubDate.toLocaleDateString(lang === 'pt' ? 'pt-BR' : 'en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+        </time>
+      </div>
+    </header>
+
+    {heroImage && <img src={heroImage} alt={title} class="w-full rounded-2xl mb-10 object-cover" />}
+
+    <!-- Content -->
+    <article class="
+      prose prose-lg max-w-none
+      prose-headings:font-black prose-headings:text-grape
+      prose-a:text-cello prose-a:no-underline hover:prose-a:underline
+      prose-strong:text-charcoal
+      prose-p:leading-relaxed
+      prose-li:leading-relaxed
+    ">
+      <slot />
+    </article>
+
+    <!-- CTA -->
+    <div class="mt-16 bg-gradient-to-br from-grape to-cello rounded-2xl p-8 text-white text-center">
+      <p class="text-sm font-bold uppercase tracking-widest text-purple-300 mb-2">Próximo passo</p>
+      <h2 class="text-2xl font-black mb-3">Primeira aula grátis com o Professor Jordan</h2>
+      <p class="text-purple-200 mb-6 text-base">100% em inglês americano · Sem cartão de crédito · Certificado TEFL nível 5</p>
+      <a
+        href="https://www.speakcycle.com/start"
+        class="inline-block bg-clay hover:bg-purple-400 transition-colors text-white font-black px-8 py-4 rounded-full text-base"
+      >
+        🎓 Agendar aula grátis
+      </a>
+    </div>
+  </main>
+
+  <footer class="border-t border-purple-100 mt-16 py-8 text-center text-sm text-gray-400">
+    <p>© {new Date().getFullYear()} SpeakCycle · <a href="https://www.speakcycle.com/start" class="text-cello hover:underline">speakcycle.com</a></p>
+  </footer>
+
+</body>
+</html>
