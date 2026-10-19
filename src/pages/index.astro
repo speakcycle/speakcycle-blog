@@ -51,7 +51,7 @@ const listingSchema = {
   <script type="application/ld+json" set:html={JSON.stringify(listingSchema)} />
   <link rel="alternate" type="application/rss+xml" title="SpeakCycle Blog" href="/blog/rss.xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@800;900&display=swap" rel="stylesheet" />
   <!-- GA4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-3J02L2DDVP"></script>
   <script>
@@ -61,45 +61,47 @@ const listingSchema = {
     gtag('config', 'G-3J02L2DDVP');
   </script>
 </head>
-<body class="bg-cream text-charcoal font-sans antialiased">
+<body class="bg-white text-charcoal font-sans antialiased">
 
   <!-- Nav -->
-  <nav class="border-b border-purple-100 bg-white/80 backdrop-blur-sm sticky top-0 z-10">
-    <div class="max-w-3xl mx-auto px-6 py-4 flex items-center justify-between">
-      <a href="https://www.speakcycle.com/start" class="font-black text-grape text-lg tracking-tight">SpeakCycle</a>
-      <a href="https://www.speakcycle.com/start" class="text-sm bg-clay text-white font-bold px-4 py-2 rounded-full hover:bg-purple-400 transition-colors">
+  <nav class="bg-ink sticky top-0 z-10">
+    <div class="max-w-5xl mx-auto px-4 py-3.5 flex items-center justify-between">
+      <a href="https://www.speakcycle.com/start" class="font-head font-black uppercase tracking-wide text-white text-lg">SpeakCycle</a>
+      <a href="https://www.speakcycle.com/start" class="bg-accent text-white font-head font-extrabold uppercase text-xs tracking-wide px-5 py-2.5 rounded-full">
         Inscreva-se
       </a>
     </div>
   </nav>
 
-  <main class="max-w-3xl mx-auto px-6 py-16">
-    <header class="mb-12">
-      <p class="text-xs font-bold uppercase tracking-widest text-clay mb-3">SpeakCycle Blog</p>
-      <h1 class="text-5xl font-black text-grape leading-tight mb-4">Aprenda inglês americano de verdade</h1>
-      <p class="text-lg text-gray-500 leading-relaxed">Dicas, guias e estratégias do Professor Jordan — nativo dos EUA, certificado TEFL nível 5.</p>
-    </header>
+  <header class="bg-sand">
+    <div class="max-w-3xl mx-auto px-4 pt-12 pb-14">
+      <p class="font-head text-xs font-extrabold uppercase tracking-[1.5px] text-accent mb-4">SpeakCycle Blog</p>
+      <h1 class="font-head text-[clamp(32px,5.5vw,52px)] font-black uppercase leading-[1.04] tracking-tight text-ink mb-5">Pare de soar traduzido em inglês</h1>
+      <p class="text-lg text-body leading-relaxed">Dicas e guias do Professor Jordan, americano da Califórnia e certificado TEFL nível 5, para brasileiros que já falam inglês e querem soar naturais.</p>
+    </div>
+  </header>
 
+  <main class="max-w-3xl mx-auto px-4 py-12">
     <div class="space-y-6">
       {posts.map(post => (
-        <article class="group border border-purple-100 bg-white rounded-2xl p-6 hover:shadow-md transition-shadow">
+        <article class="group border border-[#E5E5EA] bg-white rounded-2xl p-6 hover:border-accent transition-colors">
           <a href={`/blog/${post.slug}`} class="block">
             {post.data.tags.length > 0 && (
               <div class="flex gap-2 mb-3">
                 {post.data.tags.slice(0, 2).map(tag => (
-                  <span class="text-xs font-bold uppercase tracking-widest text-clay">{tag}</span>
+                  <span class="font-head text-[11px] font-extrabold uppercase tracking-[1.2px] text-accent">{tag}</span>
                 ))}
               </div>
             )}
-            <h2 class="text-xl font-black text-grape mb-2 group-hover:text-cello transition-colors leading-snug">
+            <h2 class="font-head text-xl font-black text-ink mb-2 group-hover:text-accent transition-colors leading-snug">
               {post.data.title}
             </h2>
-            <p class="text-gray-500 text-sm leading-relaxed mb-4">{post.data.description}</p>
+            <p class="text-body text-[15px] leading-relaxed mb-4">{post.data.description}</p>
             <div class="flex items-center justify-between">
               <time class="text-xs text-gray-400" datetime={post.data.pubDate.toISOString()}>
                 {post.data.pubDate.toLocaleDateString('pt-BR', { year: 'numeric', month: 'long', day: 'numeric' })}
               </time>
-              <span class="text-cello text-sm font-semibold group-hover:underline">Ler artigo →</span>
+              <span class="text-accent text-sm font-semibold group-hover:underline">Ler artigo →</span>
             </div>
           </a>
         </article>
@@ -107,17 +109,17 @@ const listingSchema = {
     </div>
 
     <!-- CTA -->
-    <div class="mt-16 bg-gradient-to-br from-grape to-cello rounded-2xl p-8 text-white text-center">
-      <h2 class="text-2xl font-black mb-3">Pronto para falar inglês americano?</h2>
-      <p class="text-purple-200 mb-6">Aulas particulares 1 a 1 · Professor americano nativo · Vagas por inscrição</p>
-      <a href="https://www.speakcycle.com/start" class="inline-block bg-clay hover:bg-purple-400 transition-colors text-white font-black px-8 py-4 rounded-full text-base">
+    <div class="mt-16 bg-ink rounded-2xl px-6 py-10 text-white text-center">
+      <h2 class="font-head text-2xl sm:text-3xl font-black uppercase leading-tight mb-3">Aulas particulares com o Jordan</h2>
+      <p class="text-white/75 mb-7">Aulas particulares 1 a 1 · Professor americano nativo · Vagas por inscrição</p>
+      <a href="https://www.speakcycle.com/start" class="inline-flex bg-accent text-white font-head font-extrabold uppercase tracking-wide px-8 py-4 rounded-full">
         Quero me inscrever
       </a>
     </div>
   </main>
 
-  <footer class="border-t border-purple-100 mt-8 py-8 text-center text-sm text-gray-400">
-    <p>© {new Date().getFullYear()} SpeakCycle · <a href="https://www.speakcycle.com/start" class="text-cello hover:underline">speakcycle.com</a></p>
+  <footer class="bg-[#0B0B18] mt-8 py-6 text-center text-sm text-white/40">
+    <p>© {new Date().getFullYear()} SpeakCycle · <a href="https://www.speakcycle.com/start" class="text-white/60 hover:text-white">Aulas particulares</a> · <a href="https://www.speakcycle.com/empresas" class="text-white/60 hover:text-white">Para empresas</a></p>
   </footer>
 
 </body>

@@ -29,36 +29,46 @@ Vamos ver 12 exemplos reais, divididos nessas três armadilhas.
 
 ### 1. "Actually" não é "atualmente"
 
-- ❌ *Actually, I work in sales.* (querendo dizer "atualmente")
-- ✅ *Currently, I work in sales.* ou *Right now, I work in sales.*
+<div class="compare">
+<p class="bad"><s>Actually, I work in sales.</s> <span class="note">(querendo dizer "atualmente")</span></p>
+<p class="good">Currently, I work in sales. <span class="or">ou</span> Right now, I work in sales.</p>
+</div>
 
 "Actually" significa "na verdade". Para um nativo, a primeira frase soa como se você estivesse corrigindo alguém.
 
 ### 2. "Pretend" não é "pretender"
 
-- ❌ *I pretend to travel next year.*
-- ✅ *I'm planning to travel next year.* ou *I intend to travel next year.*
+<div class="compare">
+<p class="bad"><s>I pretend to travel next year.</s></p>
+<p class="good">I'm planning to travel next year. <span class="or">ou</span> I intend to travel next year.</p>
+</div>
 
 "Pretend" é "fingir". A frase original diz que você vai fingir que viaja.
 
 ### 3. "Discuss" não é "discutir" (no sentido de brigar)
 
-- ❌ *I discussed with my boss yesterday.* (querendo dizer que brigou)
-- ✅ *I argued with my boss yesterday.* ou *I had an argument with my boss.*
+<div class="compare">
+<p class="bad"><s>I discussed with my boss yesterday.</s> <span class="note">(querendo dizer que brigou)</span></p>
+<p class="good">I argued with my boss yesterday. <span class="or">ou</span> I had an argument with my boss.</p>
+</div>
 
 "Discuss" é conversar sobre um assunto, sem conflito. E repare: em inglês não se diz "discuss with" sem um assunto. O natural é *we discussed the budget*.
 
 ### 4. "Doubt" não é "dúvida" (no sentido de pergunta)
 
-- ❌ *If you have any doubt, let me know.*
-- ✅ *If you have any questions, let me know.*
+<div class="compare">
+<p class="bad"><s>If you have any doubt, let me know.</s></p>
+<p class="good">If you have any questions, let me know.</p>
+</div>
 
 "Doubt" em inglês é desconfiança, incerteza. Num e-mail de trabalho, *any doubt* soa como se você esperasse que a pessoa desconfiasse de algo.
 
 ### 5. "Assist" não é "assistir"
 
-- ❌ *Did you assist the game last night?*
-- ✅ *Did you watch the game last night?*
+<div class="compare">
+<p class="bad"><s>Did you assist the game last night?</s></p>
+<p class="good">Did you watch the game last night?</p>
+</div>
 
 "Assist" é ajudar. Para filmes, séries e jogos, o verbo é *watch*.
 
@@ -66,23 +76,29 @@ Vamos ver 12 exemplos reais, divididos nessas três armadilhas.
 
 ### 6. "Depends of" → "depends on"
 
-- ❌ *It depends of the client.*
-- ✅ *It depends on the client.*
+<div class="compare">
+<p class="bad"><s>It depends of the client.</s></p>
+<p class="good">It depends on the client.</p>
+</div>
 
 Em português é "depende **de**". Em inglês, sempre *depend on*.
 
 ### 7. "Explain me" → "explain to me" (ou algo melhor)
 
-- ❌ *Can you explain me the process?*
-- ✅ *Can you explain the process to me?*
-- ✅✅ *Can you walk me through the process?*
+<div class="compare">
+<p class="bad"><s>Can you explain me the process?</s></p>
+<p class="good">Can you explain the process to me?</p>
+<p class="good">Melhor ainda: Can you walk me through the process?</p>
+</div>
 
-A segunda versão já está correta, mas a terceira é a que um nativo usaria numa reunião. Soa mais leve e mais natural.
+A primeira correção já está certa, mas a segunda é a que um nativo usaria numa reunião. Soa mais leve e mais natural.
 
 ### 8. "Until Friday" → "by Friday"
 
-- ❌ *I'll send the report until Friday.*
-- ✅ *I'll send the report by Friday.*
+<div class="compare">
+<p class="bad"><s>I'll send the report until Friday.</s></p>
+<p class="good">I'll send the report by Friday.</p>
+</div>
 
 "Until" indica algo que continua acontecendo até um momento. "By" indica um prazo. Esse erro aparece muito em e-mails de trabalho, e pode causar confusão real sobre datas.
 
@@ -90,29 +106,37 @@ A segunda versão já está correta, mas a terceira é a que um nativo usaria nu
 
 ### 9. "I have 30 years" → "I'm 30"
 
-- ❌ *I have 30 years.*
-- ✅ *I'm 30.* ou *I'm 30 years old.*
+<div class="compare">
+<p class="bad"><s>I have 30 years.</s></p>
+<p class="good">I'm 30. <span class="or">ou</span> I'm 30 years old.</p>
+</div>
 
 Em inglês, idade usa o verbo *to be*, não *to have*.
 
 ### 10. "I'm agree" → "I agree"
 
-- ❌ *I'm agree with you.*
-- ✅ *I agree with you.*
+<div class="compare">
+<p class="bad"><s>I'm agree with you.</s></p>
+<p class="good">I agree with you.</p>
+</div>
 
 "Agree" já é um verbo. Não precisa (e não pode) vir com *am*.
 
 ### 11. "Make a question" → "ask a question"
 
-- ❌ *Can I make a question?*
-- ✅ *Can I ask a question?*
+<div class="compare">
+<p class="bad"><s>Can I make a question?</s></p>
+<p class="good">Can I ask a question?</p>
+</div>
 
 Em português a gente "faz" uma pergunta. Em inglês, a gente *asks*.
 
 ### 12. "I work here since 2020" → "I've worked here since 2020"
 
-- ❌ *I work here since 2020.*
-- ✅ *I've worked here since 2020.* ou *I've been working here since 2020.*
+<div class="compare">
+<p class="bad"><s>I work here since 2020.</s></p>
+<p class="good">I've worked here since 2020. <span class="or">ou</span> I've been working here since 2020.</p>
+</div>
 
 Quando algo começou no passado e continua até hoje, o inglês usa o *present perfect*. Esse é um dos erros mais comuns em entrevistas de emprego, justamente quando você está falando da sua experiência.
 
