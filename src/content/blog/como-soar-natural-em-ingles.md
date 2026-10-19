@@ -29,36 +29,36 @@ Vamos ver 12 exemplos reais, divididos nessas três armadilhas.
 
 ### 1. "Actually" não é "atualmente"
 
-❌ *Actually, I work in sales.* (querendo dizer "atualmente")
-✅ *Currently, I work in sales.* ou *Right now, I work in sales.*
+- ❌ *Actually, I work in sales.* (querendo dizer "atualmente")
+- ✅ *Currently, I work in sales.* ou *Right now, I work in sales.*
 
 "Actually" significa "na verdade". Para um nativo, a primeira frase soa como se você estivesse corrigindo alguém.
 
 ### 2. "Pretend" não é "pretender"
 
-❌ *I pretend to travel next year.*
-✅ *I'm planning to travel next year.* ou *I intend to travel next year.*
+- ❌ *I pretend to travel next year.*
+- ✅ *I'm planning to travel next year.* ou *I intend to travel next year.*
 
 "Pretend" é "fingir". A frase original diz que você vai fingir que viaja.
 
 ### 3. "Discuss" não é "discutir" (no sentido de brigar)
 
-❌ *I discussed with my boss yesterday.* (querendo dizer que brigou)
-✅ *I argued with my boss yesterday.* ou *I had an argument with my boss.*
+- ❌ *I discussed with my boss yesterday.* (querendo dizer que brigou)
+- ✅ *I argued with my boss yesterday.* ou *I had an argument with my boss.*
 
 "Discuss" é conversar sobre um assunto, sem conflito. E repare: em inglês não se diz "discuss with" sem um assunto. O natural é *we discussed the budget*.
 
 ### 4. "Doubt" não é "dúvida" (no sentido de pergunta)
 
-❌ *If you have any doubt, let me know.*
-✅ *If you have any questions, let me know.*
+- ❌ *If you have any doubt, let me know.*
+- ✅ *If you have any questions, let me know.*
 
 "Doubt" em inglês é desconfiança, incerteza. Num e-mail de trabalho, *any doubt* soa como se você esperasse que a pessoa desconfiasse de algo.
 
 ### 5. "Assist" não é "assistir"
 
-❌ *Did you assist the game last night?*
-✅ *Did you watch the game last night?*
+- ❌ *Did you assist the game last night?*
+- ✅ *Did you watch the game last night?*
 
 "Assist" é ajudar. Para filmes, séries e jogos, o verbo é *watch*.
 
@@ -66,23 +66,23 @@ Vamos ver 12 exemplos reais, divididos nessas três armadilhas.
 
 ### 6. "Depends of" → "depends on"
 
-❌ *It depends of the client.*
-✅ *It depends on the client.*
+- ❌ *It depends of the client.*
+- ✅ *It depends on the client.*
 
 Em português é "depende **de**". Em inglês, sempre *depend on*.
 
 ### 7. "Explain me" → "explain to me" (ou algo melhor)
 
-❌ *Can you explain me the process?*
-✅ *Can you explain the process to me?*
-✅✅ *Can you walk me through the process?*
+- ❌ *Can you explain me the process?*
+- ✅ *Can you explain the process to me?*
+- ✅✅ *Can you walk me through the process?*
 
 A segunda versão já está correta, mas a terceira é a que um nativo usaria numa reunião. Soa mais leve e mais natural.
 
 ### 8. "Until Friday" → "by Friday"
 
-❌ *I'll send the report until Friday.*
-✅ *I'll send the report by Friday.*
+- ❌ *I'll send the report until Friday.*
+- ✅ *I'll send the report by Friday.*
 
 "Until" indica algo que continua acontecendo até um momento. "By" indica um prazo. Esse erro aparece muito em e-mails de trabalho, e pode causar confusão real sobre datas.
 
@@ -90,29 +90,29 @@ A segunda versão já está correta, mas a terceira é a que um nativo usaria nu
 
 ### 9. "I have 30 years" → "I'm 30"
 
-❌ *I have 30 years.*
-✅ *I'm 30.* ou *I'm 30 years old.*
+- ❌ *I have 30 years.*
+- ✅ *I'm 30.* ou *I'm 30 years old.*
 
 Em inglês, idade usa o verbo *to be*, não *to have*.
 
 ### 10. "I'm agree" → "I agree"
 
-❌ *I'm agree with you.*
-✅ *I agree with you.*
+- ❌ *I'm agree with you.*
+- ✅ *I agree with you.*
 
 "Agree" já é um verbo. Não precisa (e não pode) vir com *am*.
 
 ### 11. "Make a question" → "ask a question"
 
-❌ *Can I make a question?*
-✅ *Can I ask a question?*
+- ❌ *Can I make a question?*
+- ✅ *Can I ask a question?*
 
 Em português a gente "faz" uma pergunta. Em inglês, a gente *asks*.
 
 ### 12. "I work here since 2020" → "I've worked here since 2020"
 
-❌ *I work here since 2020.*
-✅ *I've worked here since 2020.* ou *I've been working here since 2020.*
+- ❌ *I work here since 2020.*
+- ✅ *I've worked here since 2020.* ou *I've been working here since 2020.*
 
 Quando algo começou no passado e continua até hoje, o inglês usa o *present perfect*. Esse é um dos erros mais comuns em entrevistas de emprego, justamente quando você está falando da sua experiência.
 
