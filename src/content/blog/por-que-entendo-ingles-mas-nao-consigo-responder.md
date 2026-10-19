@@ -88,6 +88,6 @@ Se você quer entender mais sobre o bloqueio geral (não só "responder"), [esse
 
 ---
 
-**Quer destravar?** O Professor Jordan, nativo dos EUA com certificação TEFL nível 5, oferece **primeira aula grátis** — IA diária + currículo estruturado + aula ao vivo, sem cartão de crédito.
+**Quer destravar?** O Jordan, professor americano da Califórnia com certificação TEFL nível 5, dá aulas particulares 1 a 1 para brasileiros que já falam inglês e querem soar naturais no trabalho, em entrevistas e em conversas reais. As vagas são por inscrição.
 
-[Agendar aula grátis →](https://www.speakcycle.com/start)
+[Quero me inscrever →](https://www.speakcycle.com/start)

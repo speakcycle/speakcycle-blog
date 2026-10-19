@@ -111,6 +111,6 @@ Quando você encontra os quatro juntos, o que parecia impossível por anos come�
 
 ---
 
-**Quer experimentar o método dos 4 pilares?** O Professor Jordan, nativo dos EUA com certificação TEFL nível 5, oferece **primeira aula grátis** — combinando aulas ao vivo, prática diária de IA, currículo estruturado, e acompanhamento humano. Sem cartão de crédito.
+**Quer experimentar o método dos 4 pilares?** O Jordan, professor americano da Califórnia com certificação TEFL nível 5, dá aulas particulares 1 a 1 para brasileiros que já falam inglês e querem soar naturais no trabalho, em entrevistas e em conversas reais. As vagas são por inscrição.
 
-[Agendar aula grátis →](https://www.speakcycle.com/start)
+[Quero me inscrever →](https://www.speakcycle.com/start)

@@ -110,6 +110,6 @@ Mais rápido que isso, desconfie. Mais lento que isso, é o método ou a consist
 
 ---
 
-**Quer começar o cronograma de 12-18 meses agora?** O Professor Jordan, nativo dos EUA com certificação TEFL nível 5, oferece **primeira aula grátis** — método dos 4 pilares completo, sem cartão de crédito.
+**Quer começar o cronograma de 12-18 meses agora?** O Jordan, professor americano da Califórnia com certificação TEFL nível 5, dá aulas particulares 1 a 1 para brasileiros que já falam inglês e querem soar naturais no trabalho, em entrevistas e em conversas reais. As vagas são por inscrição.
 
-[Agendar aula grátis →](https://www.speakcycle.com/start)
+[Quero me inscrever →](https://www.speakcycle.com/start)
