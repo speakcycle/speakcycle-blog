@@ -98,6 +98,6 @@ Quando você junta esses cinco elementos, o bloqueio que você carrega há anos 
 
 ---
 
-**Quer experimentar?** O Professor Jordan, nativo dos EUA com certificação TEFL nível 5, oferece uma **primeira aula grátis** — em inglês americano, com prática de IA inclusa no plano, e sem precisar de cartão de crédito.
+**Quer experimentar?** O Jordan, professor americano da Califórnia com certificação TEFL nível 5, dá aulas particulares 1 a 1 para brasileiros que já falam inglês e querem soar naturais no trabalho, em entrevistas e em conversas reais. As vagas são por inscrição.
 
-[Agendar aula grátis →](https://www.speakcycle.com/start)
+[Quero me inscrever →](https://www.speakcycle.com/start)

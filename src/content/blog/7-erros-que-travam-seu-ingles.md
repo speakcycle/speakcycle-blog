@@ -117,6 +117,6 @@ A primeira mudança é simples: pare de tentar arrumar mais conhecimento, e come
 
 ---
 
-**Quer começar a usar o que já sabe?** O Professor Jordan, nativo dos EUA com certificação TEFL nível 5, oferece **primeira aula grátis** — sem cartão de crédito, sem cobrança escondida. Apenas uma aula real em inglês americano para você sentir o método na prática.
+**Quer começar a usar o que já sabe?** O Jordan, professor americano da Califórnia com certificação TEFL nível 5, dá aulas particulares 1 a 1 para brasileiros que já falam inglês e querem soar naturais no trabalho, em entrevistas e em conversas reais. As vagas são por inscrição.
 
-[Agendar aula grátis →](https://www.speakcycle.com/start)
+[Quero me inscrever →](https://www.speakcycle.com/start)
